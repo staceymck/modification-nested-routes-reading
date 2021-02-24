@@ -1,4 +1,6 @@
 <%= form_for(@post) do |f| %>
+  <%= author_id_field(@post) %> #calls on a helper method to present drop down menu of authors if author isn't determined by URL
+  
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
 
